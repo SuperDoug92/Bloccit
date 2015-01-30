@@ -1,10 +1,8 @@
-#module ApplicationHelper
-#  def my_name
-#    "Douglas Clarke"
-#  end
-#end
-
 module ApplicationHelper
+  def my_name
+   "Douglas Clarke"
+  end
+
   def form_group_tag(errors, &block)
     if errors.any? 
       content_tag :div, capture(&block), class: 'form-group has-error' 

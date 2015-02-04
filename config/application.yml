@@ -1,7 +1,13 @@
 
 SENDGRID_PASSWORD: WateRisG0#D 
 SENDGRID_USERNAME: SuperDoug92
+AWS_ACCESS_KEY_ID: AKIAIV6KKBDVV2WVCR6A
+AWS_SECRET_ACCESS_KEY: 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
 
+development:
+  AWS_BUCKET: dougc-bloccit-development
+production:
+  AWS_BUCKET: dougc-bloccit-production
 # Add configuration values here, as shown below.
 #
 # pusher_app_id: "2954"

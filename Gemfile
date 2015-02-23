@@ -40,7 +40,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 #twitter bootstrap
-gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-sass', '3.2.0'
 
 gem 'devise'
 

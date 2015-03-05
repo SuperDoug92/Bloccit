@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   has_many :comments, dependent: :destroy
   has_many :votes, dependent: :destroy
+  has_many :favorites, dependent: :destroy
   belongs_to :user
   belongs_to :topic
   mount_uploader :image, ImageUploader
@@ -50,7 +51,7 @@ class Post < ActiveRecord::Base
   private
 
   def create_vote
-    user.votes.create post: self, value: 1
+    user.votes.create(post: self, value: 1)
   end
 
 end

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   #first line starts with Bloccit::Application on Topics & Posts checkoint instead of Rails.application
   devise_for :users
-  resources :users, only: [:update]
+  resources :users, only: [:update, :show]
   resources :topics do
     resources :posts, except: [:index]
   end
